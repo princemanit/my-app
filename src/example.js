@@ -62,7 +62,7 @@ export default function BasicExample() {
 function Home() {
   return (
     <div>
-      <h2>Home</h2>
+      <h2>Home...</h2>
     </div>
   );
 }
@@ -70,7 +70,7 @@ function Home() {
 function About() {
   return (
     <div>
-      <h2>About</h2>
+      <h2>About...</h2>
     </div>
   );
 }
@@ -78,7 +78,7 @@ function About() {
 function Dashboard() {
   return (
     <div>
-      <h2>Dashboard</h2>
+      <h2>Dashboard...</h2>
     </div>
   );
 }
