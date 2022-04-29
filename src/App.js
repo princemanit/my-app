@@ -14,7 +14,18 @@ import {
 // through the site. This preserves the browser history,
 // making sure things like the back button and bookmarks
 // work properly.
+var myHeaders = new Headers();
+myHeaders.append("tenantId", "{{tenantId}}");
 
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+fetch("http://20.204.240.251:8080/api/v1/keycloak/userToken", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
 export default function BasicExample() {
   return (
     <Router>
